@@ -141,7 +141,7 @@
               "apps/web/src/favicon.ico",
               "apps/web/src/assets",
               "apps/web/src/manifest.webmanifest",
-              "src/robots.txt",
+              "apps/web/src/robots.txt",
               {
                 "glob": "_redirects",
                 "input": "apps/web/src",
