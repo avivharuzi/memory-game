@@ -35,7 +35,7 @@ export class GameStore extends EntityStore<GameState> {
     this.update(id, { isFlip });
   }
 
-  updateMatchCard(id: number, hasMatch: boolean = true) {
+  updateMatchCard(id: number, hasMatch: boolean = true): void {
     this.update(id, { hasMatch });
   }
 }
