@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-center">
+  <memory-game-button routerLink="/game">
+    {{ (status$ | async) === GameStatus.Start ? 'RESUME GAME' : 'START GAME' }}
+  </memory-game-button>
+</div>

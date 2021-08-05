@@ -1,0 +1,26 @@
+<ng-container>
+  <memory-game-scoreboard>
+    <memory-game-paragraph>Time {{ countTime$ | async }}</memory-game-paragraph>
+    <memory-game-paragraph
+      >Matches {{ matches$ | async }}/{{
+        countCards$ | async
+      }}</memory-game-paragraph
+    >
+  </memory-game-scoreboard>
+  <ng-container *ngIf="cardsAndLoading$ | async as cardsAndLoading">
+    <div class="row justify-content-center mt-4">
+      <div
+        (click)="flipCard(card)"
+        class="cursor-pointer col-3 col-md-2 mb-3"
+        *ngFor="let card of cardsAndLoading[1]"
+        [class.no-click]="card.hasMatch || card.isFlip || cardsAndLoading[0]"
+      >
+        <memory-game-card
+          [imgSrc]="
+            card.isFlip ? card.path : 'shared-assets/images/cards/back-card.jpg'
+          "
+        ></memory-game-card>
+      </div>
+    </div>
+  </ng-container>
+</ng-container>

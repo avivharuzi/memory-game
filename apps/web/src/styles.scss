@@ -1,0 +1,16 @@
+@use '~bootstrap/scss/bootstrap-reboot';
+@use '~bootstrap/scss/bootstrap-grid';
+
+@use 'libs/ui/src/scss/variables' as vars;
+
+html {
+  background-color: vars.$color-background;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+.text-center {
+  text-align: center;
+}
