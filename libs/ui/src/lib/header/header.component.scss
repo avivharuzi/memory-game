@@ -1,0 +1,9 @@
+@use './../../scss/variables' as vars;
+
+.ui-header {
+  background-color: vars.$color-primary;
+  color: vars.$color-white;
+  padding: 1rem;
+  text-align: center;
+  font-size: vars.$font-size-md;
+}

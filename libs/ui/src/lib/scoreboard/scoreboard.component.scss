@@ -1,0 +1,10 @@
+@use './../../scss/variables' as vars;
+
+.ui-scoreboard {
+  border-radius: vars.$border-radius;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: vars.$color-secondary;
+  padding: 1rem;
+}

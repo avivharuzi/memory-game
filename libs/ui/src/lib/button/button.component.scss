@@ -1,0 +1,19 @@
+@use '../../scss/variables' as vars;
+
+.ui-button {
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: vars.$border-radius;
+  font-size: vars.$font-size-lg;
+  background-color: vars.$color-secondary;
+  color: vars.$color-primary;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: vars.$font-size-md;
+  }
+}

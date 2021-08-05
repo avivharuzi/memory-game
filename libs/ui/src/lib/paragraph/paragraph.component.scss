@@ -1,0 +1,11 @@
+@use './../../scss/variables' as vars;
+
+.ui-paragraph {
+  font-size: vars.$font-size-lg;
+  color: vars.$color-primary;
+  margin: 0;
+
+  @media screen and (max-width: 800px) {
+    font-size: vars.$font-size-md;
+  }
+}

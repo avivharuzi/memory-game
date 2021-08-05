@@ -1,0 +1,14 @@
+@use './../../scss/variables' as vars;
+
+.ui-card {
+  padding: 0.25rem;
+  background-color: vars.$color-white;
+  border-radius: vars.$border-radius;
+  width: 100%;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    border-radius: vars.$border-radius;
+  }
+}
