@@ -140,6 +140,8 @@
             "assets": [
               "apps/web/src/favicon.ico",
               "apps/web/src/assets",
+              "apps/web/src/manifest.webmanifest",
+              "src/robots.txt",
               {
                 "glob": "_redirects",
                 "input": "apps/web/src",
@@ -152,7 +154,9 @@
               }
             ],
             "styles": ["apps/web/src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "apps/web/ngsw-config.json"
           },
           "configurations": {
             "production": {
