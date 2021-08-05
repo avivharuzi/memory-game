@@ -141,6 +141,11 @@
               "apps/web/src/favicon.ico",
               "apps/web/src/assets",
               {
+                "glob": "_redirects",
+                "input": "apps/web/src",
+                "output": "/"
+              },
+              {
                 "input": "libs/shared-assets",
                 "glob": "*/**",
                 "output": "shared-assets"
